@@ -1,0 +1,28 @@
+.codeContainer {
+    margin-bottom: var(--paragraph-margin-bottom);
+    position: relative;
+    font-size: 15.2px;
+    font-weight: 400;
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.codeContainer code {
+    border-radius: var(--div-border-radius);
+}
+
+.copy {
+    position: absolute;
+    height: 40%;
+    aspect-ratio: 1/1;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+.codeContainer:hover > .copy {
+    opacity: 1;
+}

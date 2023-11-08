@@ -1,0 +1,4 @@
+.container {
+    padding: var(--container-vertical-padding) var(--container-horizontal-padding);
+    overflow-y: auto;
+}

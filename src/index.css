@@ -9,6 +9,10 @@ img {
     cursor: pointer;
 }
 
+code {
+    background-color: #F5F8FA;
+}
+
 #root {
     width: 100vw;
     height: 100vh;
@@ -22,4 +26,9 @@ img {
 :root {
     --container-vertical-padding: 13px;
     --container-horizontal-padding: 10px;
+    --header1-margin-bottom: 25px;
+    --header2-margin-bottom: 20px;
+    --paragraph-margin-bottom: 20px;
+    --header-margin-top: 40px;
+    --div-border-radius: 4px;
 }

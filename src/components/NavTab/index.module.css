@@ -5,7 +5,7 @@
     display: flex;
     cursor: pointer;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: var(--div-border-radius);
     color: #000000;
     font-size: 16px;
     font-weight: 500;

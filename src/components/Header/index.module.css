@@ -1,0 +1,39 @@
+.header {
+    font-weight: 700;
+}
+
+.withMarginTop {
+    margin-top: var(--header-margin-top);
+}
+
+.h1 {
+    font-size: 48px;
+    margin-bottom: var(--header1-margin-bottom);
+}
+
+.h2 {
+    font-size: 32px;
+    margin-bottom: var(--header2-margin-bottom);
+}
+
+.h3 {
+    font-size: 24px;
+}
+
+.h1.halfSize {
+    font-size: 32px;
+}
+
+.h2.halfSize {
+    font-size: 24px;
+}
+
+.h3.halfSize {
+    font-size: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
