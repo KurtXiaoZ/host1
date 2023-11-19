@@ -18,12 +18,13 @@
     display: flex;
     align-items: center;
     column-gap: 15px;
+    box-sizing: border-box;
+    padding: var(--header-nav-vertical-padding) var(--header-nav-horizontal-padding);
 }
 
 .headerTitle {
     font-weight: 700;
     font-size: 16px;
-    margin-left: 15px;
 }
 
 .headerLink {
@@ -38,10 +39,6 @@
 
 .leftmostHeaderLink {
     margin-left: auto;
-}
-
-.rightmostHeaderLink {
-    margin-right: 20px;
 }
 
 .content {
@@ -62,6 +59,4 @@
 .headerMenuIcon {
     height: 20px;
     aspect-ratio: 1/1;
-    margin-left: 15px;
-    margin-right: -20px;
 }

@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import styles from './index.module.css';
-import { Link } from 'react-router-dom';
 const cx = classNames.bind(styles);
 
 export const Header = (props) => {
@@ -9,7 +8,8 @@ export const Header = (props) => {
         type = 1,
         windowWidth,
         withMarginTop,
-        linkTo
+        id,
+        scrollAlignTop = true,
     } = props;
 
     return <div
@@ -20,16 +20,19 @@ export const Header = (props) => {
             [styles.halfSize]: windowWidth < 600,
             [styles.withMarginTop]: withMarginTop,
         })}
+        id={id}
+        // onClick={() => document.getElementById(id)?.scrollIntoView(scrollAlignTop)}
     >
-        {
+        <>{children}</>
+        {/*
             linkTo
-            ? <Link 
+            ? <HashLink 
                 className={cx(styles.link)}
                 to={linkTo}
             >
                 {children}
-            </Link> 
+            </HashLink> 
             : <>{children}</>
-        }
+        */}
     </div>
 };

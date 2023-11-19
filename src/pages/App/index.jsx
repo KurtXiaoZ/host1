@@ -11,7 +11,7 @@ const cx = classNames.bind(styles);
 
 export const App = () => {
   const { width } = useWindowSize();
-  const isFullWindow = width > 800;
+  const isFullWindow = width === 0 ? true : width > 800;
   const isMinWindow = width < 420;
   const [showNavigationBar, setShowNavigationBar] = useState(false);
 
@@ -24,7 +24,7 @@ export const App = () => {
         {!isFullWindow && <img src={MenuSVG} className={cx(styles.headerMenuIcon)} onClick={() => setShowNavigationBar(!showNavigationBar)}/>}
         <span className={cx(styles.headerTitle)}>React Material Icon Picker</span>
         {!isMinWindow && <a target="_blank" href={NPM_HREF} className={cx(styles.headerLink, styles.leftmostHeaderLink)}>NPM</a>}
-        {!isMinWindow && <a target="_blank" href={GITHUB_HREF} className={cx(styles.headerLink, styles.rightmostHeaderLink)}>Github</a>}
+        {!isMinWindow && <a target="_blank" href={GITHUB_HREF} className={cx(styles.headerLink)}>Github</a>}
     </div>
     <div className={cx(styles.main, {
       [styles.dark]: showNavigationBar && !isFullWindow
@@ -38,9 +38,9 @@ export const App = () => {
             <Route path="/troubleshooting" Component={TroubleShooting}/>
         </Routes>
       </div>
-      {!isMinWindow && <div className={cx(styles.anchorContainer)}>
+      {/*!isMinWindow && <div className={cx(styles.anchorContainer)}>
         a
-      </div>}
+      </div>*/}
     </div>
   </HashRouter>
 }

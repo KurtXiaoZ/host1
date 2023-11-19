@@ -3,7 +3,7 @@
     position: relative;
     font-size: 15.2px;
     font-weight: 400;
-    height: 50px;
+    min-height: 50px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -14,7 +14,7 @@
 
 .copy {
     position: absolute;
-    height: 40%;
+    height: 16px;
     aspect-ratio: 1/1;
     top: 50%;
     right: 10px;

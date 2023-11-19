@@ -1,4 +1,17 @@
 .container {
     padding: var(--container-vertical-padding) var(--container-horizontal-padding);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
     overflow-y: auto;
+}
+
+.demo {
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+.iconPickerContainer {
+    width: 80%;
 }
