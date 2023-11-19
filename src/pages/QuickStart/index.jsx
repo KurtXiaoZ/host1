@@ -36,8 +36,6 @@ export const QuickStart = () => {
             type={2}
             windowWidth={width}
             withMarginTop
-            linkTo='/quickstart#usage'
-            id='usage'
         >
             Usage
         </Header>

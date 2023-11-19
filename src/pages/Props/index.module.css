@@ -1,0 +1,34 @@
+.container {
+    padding: var(--container-vertical-padding) var(--container-horizontal-padding);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.showSandbox {
+    display: flex;
+    margin-bottom: var(--paragraph-margin-bottom);
+    align-items: center;
+}
+
+.toggle {
+    margin-left: 10px;
+}
+
+.codesandboxContainer {
+    height: 350px;
+    width: 100%;
+    margin-bottom: var(--paragraph-margin-bottom);
+}
+
+.codesandbox {
+    height: 100%;
+    width: 100%;
+}
+
+.propsContainer {
+    flex: 1;
+    overflow-y: auto;
+}

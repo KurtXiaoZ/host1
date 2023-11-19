@@ -11,7 +11,7 @@ export const TABS = [
         linkTo: '/props'
     },
     {
-        tabName: 'Troubleshooting',
-        linkTo: '/troubleshooting'
+        tabName: 'Caveats',
+        linkTo: '/caveats'
     },
 ]
