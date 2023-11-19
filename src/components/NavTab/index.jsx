@@ -6,8 +6,16 @@ const cx = classNames.bind(styles);
 export const NavTab = (props) => {
     const {
         tabName = '',
-        linkTo = '/'
+        linkTo = '/',
+        pathname = '/'
     } = props;
 
-    return <Link className={cx(styles.tab)} to={linkTo}>{tabName}</Link>
+    return <Link 
+        className={cx(styles.tab, {
+            [styles.current]: pathname === linkTo
+        })}
+        to={linkTo}
+    >
+        {tabName}
+    </Link>
 };

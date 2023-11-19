@@ -1,7 +1,7 @@
 .navigationBar {
     height: 100%;
-    width: 18%;
-    min-width: 200px;
+    flex: 0 0 18%;
+    min-width: 170px;
     max-width: 300px;
     padding: var(--container-vertical-padding) var(--container-horizontal-padding);
     border-right: 1.5px solid #DADDE1;
@@ -11,7 +11,18 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 80%;
     background-color: #ffffff;
     z-index: 10;
+    max-width: none;
+    transition: width 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.visible {
+    width: 80%;
+}
+
+.hidden {
+    width: 0;
+    min-width: 0px !important;
+    opacity: 0;
 }

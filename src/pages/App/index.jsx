@@ -1,5 +1,4 @@
-import { MaterialIconPicker } from "react-material-icon-picker"
-import { HashRouter, Outlet, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { NavigationBar, Props, QuickStart, TroubleShooting } from '..';
 import styles from './index.module.css';
 import { GITHUB_HREF, NPM_HREF } from "../../lib/constants";
@@ -29,8 +28,7 @@ export const App = () => {
     <div className={cx(styles.main, {
       [styles.dark]: showNavigationBar && !isFullWindow
     })}>
-      {isFullWindow && <NavigationBar />}
-      {!isFullWindow && showNavigationBar && <NavigationBar isWindowNotFull/>}
+      {<NavigationBar isWindowNotFull={!isFullWindow} showNavigationBar={showNavigationBar}/>}
       <div className={cx(styles.content)}>
         <Routes>
             <Route path="/quickstart" Component={QuickStart}/>
@@ -38,9 +36,10 @@ export const App = () => {
             <Route path="/troubleshooting" Component={TroubleShooting}/>
         </Routes>
       </div>
-      {/*!isMinWindow && <div className={cx(styles.anchorContainer)}>
-        a
-      </div>*/}
+      {!isFullWindow && showNavigationBar && <div 
+        className={cx(styles.overlay)}
+        onClick={() => setShowNavigationBar(false)}
+      ></div>}
     </div>
   </HashRouter>
 }

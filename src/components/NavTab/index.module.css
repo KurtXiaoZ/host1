@@ -18,3 +18,7 @@
 .tabLink {
     text-decoration: none;
 }
+
+.current {
+    background-color: #F2F2F2;
+}
