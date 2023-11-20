@@ -13,7 +13,7 @@
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-material-icon-picker": "^0.0.2",
+    "react-material-icon-picker": "^0.0.3",
     "react-router-dom": "^6.18.0",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",

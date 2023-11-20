@@ -80,7 +80,7 @@ export const Props = () => {
                 descriptions={['Type of material icons', 'type can be']}
             />
             <CodeSnippet>
-                {`type Type = {\n   label: string;\n   value: string;\n};`}
+                {`type Type = {\n   label: 'Filled' | 'Outlined' | 'Rounded' | 'Sharp' | 'Two Tone'\n   value: 'filled' | 'outlined' | 'rounded' | 'sharp' | 'two-tone'\n};`}
             </CodeSnippet>
             <Prop 
                 propName={'onTypeChange?: (type: Type) => void'}

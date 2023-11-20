@@ -1,4 +1,4 @@
-export const TroubleShooting = () => {
+export const Caveats = () => {
     return <div>
         troubleshooting
     </div>

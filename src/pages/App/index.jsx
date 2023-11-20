@@ -1,5 +1,5 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
-import { NavigationBar, Props, QuickStart, TroubleShooting } from '..';
+import { NavigationBar, Props, QuickStart, Caveats, Styles } from '..';
 import styles from './index.module.css';
 import { GITHUB_HREF, NPM_HREF } from "../../lib/constants";
 import { useWindowSize } from '../../lib/hooks';
@@ -33,7 +33,8 @@ export const App = () => {
         <Routes>
             <Route path="/quickstart" Component={QuickStart}/>
             <Route path="/props" Component={Props}/>
-            <Route path="/troubleshooting" Component={TroubleShooting}/>
+            <Route path="/styles" Component={Styles}/>
+            <Route path="/caveats" Component={Caveats}/>
         </Routes>
       </div>
       {!isFullWindow && showNavigationBar && <div 

@@ -1,0 +1,28 @@
+.container {
+    padding: var(--container-vertical-padding) var(--container-horizontal-padding);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.iconPickerContainer {
+    width: 100%;
+    height: 250px;
+    margin-bottom: var(--paragraph-margin-bottom);
+}
+
+.stylesContainer {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.style {
+    cursor: pointer;
+    margin: 5px;
+}
+
+.style:hover {
+    color: red;
+}
