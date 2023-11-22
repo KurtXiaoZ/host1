@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import { Header } from '../../components/Header';
 import { Paragraph } from '../../components/Paragraph';
-import { Prop } from '../../components/Prop';
 import { useWindowSize } from '../../lib/hooks';
-import { CodeSnippet } from '../../components/CodeSnippet';
 import styles from './index.module.css';
 import classNames from 'classnames';
 import { MaterialIconPicker } from 'react-material-icon-picker';
@@ -39,7 +37,7 @@ export const Styles = () => {
                 {MATERIAL_ICON_PICKER_STYLES.map(style => <div 
                     className={cx(styles.style)}
                     onMouseEnter={() => setIconPickerStyles({ [style]: (base) => ({ ...base, ...{ border: '1px solid red' } }) })}
-                    onMouseLeave={() => setIconPickerStyles({ [style]: base => base })}
+                    onMouseLeave={() => setIconPickerStyles({})}
                 >
                     {style}
                 </div>)}

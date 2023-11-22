@@ -31,10 +31,12 @@ export const App = () => {
       {<NavigationBar isWindowNotFull={!isFullWindow} showNavigationBar={showNavigationBar}/>}
       <div className={cx(styles.content)}>
         <Routes>
+            <Route index Component={QuickStart}/>
             <Route path="/quickstart" Component={QuickStart}/>
             <Route path="/props" Component={Props}/>
             <Route path="/styles" Component={Styles}/>
             <Route path="/caveats" Component={Caveats}/>
+            <Route path="*" Component={QuickStart}/>
         </Routes>
       </div>
       {!isFullWindow && showNavigationBar && <div 
