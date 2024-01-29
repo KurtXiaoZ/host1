@@ -1,5 +1,6 @@
 to publish
-npm run predeploy
+move dist into this repo
+in index.html, change all path to `/host/...`
 npm run deploy
 
-hosted at: https://reactmaterialiconpicker.github.io/demo/
+hosted at: https://kurtxiaoz.github.io/host/
